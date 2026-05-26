@@ -1,0 +1,30 @@
+chatgpt — Hub Maths & Sciences — mode d’emploi — 26/05/2026 20h25
+
+STRUCTURE
+index.html = structure/design du site
+data.js = liens à modifier
+pdf/ = dossier des PDF
+
+AJOUTER UN LEARNINGAPPS
+Dans data.js, ajoute une entrée sous la bonne clé :
+{
+  nom:"Nom visible sur le bouton",
+  url:"https://learningapps.org/..."
+}
+
+AJOUTER UN PDF
+1. Mets le PDF dans le dossier pdf.
+2. Dans data.js, ajoute :
+{
+  nom:"Nom visible sur le bouton",
+  url:"pdf/nom-du-fichier.pdf"
+}
+
+CLÉS POSSIBLES
+Niveaux : 2nde, 1ere, term, bp
+Matières : maths, sciences
+Catégories : cours, qcm, exos, videos
+
+POUR NETLIFY
+Glisse-dépose le ZIP complet.
+Ensuite, pour les prochaines évolutions, tu modifies surtout data.js.
